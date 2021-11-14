@@ -8,5 +8,5 @@ int main() {
   for(int i=1;i<=20;i++) {
     m = lcm(m, i);
   }
-  std::cout << m << "/n";
+  std::cout << m << "\n";
 }
