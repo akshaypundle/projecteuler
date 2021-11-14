@@ -7,5 +7,5 @@ int main() {
       sum+=i;
     }
   }
-  std::cout << sum;
+  std::cout << sum << "\n";
 }

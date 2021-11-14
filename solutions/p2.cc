@@ -16,5 +16,5 @@ int main() {
     fib0 = fib1;
     fib1 = next;
   }
-  std::cout << sum;
+  std::cout << sum << "\n" ;
 }

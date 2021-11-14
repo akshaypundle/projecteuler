@@ -8,6 +8,6 @@ int main() {
       n = n /i;
     }
   }
-  std::cout << n;
+  std::cout << n << "\n";
 }
 

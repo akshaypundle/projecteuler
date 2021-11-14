@@ -13,5 +13,5 @@ int main() {
       }
     }
   }
-  std::cout << max << "/n";
+  std::cout << max << "\n";
 }
