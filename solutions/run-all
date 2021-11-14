@@ -2,6 +2,6 @@
 for i in {1..7}
 do
   echo Problem $i
-   ./run-cc p$i
+  /usr/bin/time -f 'Runtime: %E' ./run-cc p$i
   echo
 done
