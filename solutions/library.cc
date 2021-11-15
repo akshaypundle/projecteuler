@@ -1,6 +1,7 @@
 #include <library.h>
 #include <vector>
 #include <cmath>
+#include <string>
 
 namespace library {
 
@@ -46,4 +47,26 @@ namespace library {
     }
     return ret;
   }
+
+  string AddNumbers(vector<string> nums) {
+    bool shouldAdd = true;
+    int i=0;
+    int tsum = 0;
+    string res =  "";
+    while(shouldAdd) {
+      shouldAdd = false;
+      for(const string &num : nums) {
+        if(num.size() > i) {
+          tsum+= (num[num.size() - 1 - i] - '0');
+          shouldAdd=true;
+        }
+      }
+      res = char((tsum % 10)+'0')+res;
+      tsum/=10;
+      i++;
+    }
+    if(tsum > 0) res = char((tsum % 10)+'0')+res;
+    return res;
+  }
+
 }

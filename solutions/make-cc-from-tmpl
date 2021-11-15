@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ -f $1.cc ]; then
+   echo "File $1.cc exists."
+else
+   echo "Creating cc template for $1.cc"
+   cp -n cc-template $1.cc
+fi

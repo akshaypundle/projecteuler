@@ -1,6 +1,8 @@
 #ifndef LIBRARY_H
 #define LIBRARY_H
+
 #include <vector>
+#include <string>
 
 namespace library {
 
@@ -12,6 +14,8 @@ namespace library {
   long Lcm(long n1, long n2);
   // returns a vector of size n+1 where a[i] is true iff i is prime
   std::vector<bool> Primes(int n);
+  // adds numbers given as a string
+  std::string AddNumbers(std::vector<std::string> nums);
 
 }
 
