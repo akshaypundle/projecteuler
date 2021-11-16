@@ -13,9 +13,8 @@ p 012 : 76576500
 p 013 : 5537376230          - bigint addition
 p 014 : 837799              - collatz
 p 015 : 137846528820        - count paths in grid
-
-p 016 :
-p 017 :
+p 016 : 1366                - sum of digits of 2^1000
+p 017 : 21124               - letters in numbers up to 1000
 p 018 :
 p 019 :
 p 020 :

@@ -61,7 +61,9 @@ namespace library {
           shouldAdd=true;
         }
       }
-      res = char((tsum % 10)+'0')+res;
+      if(shouldAdd || tsum > 0) {
+        res = char((tsum % 10)+'0')+res;
+      }
       tsum/=10;
       i++;
     }
