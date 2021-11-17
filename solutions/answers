@@ -15,7 +15,7 @@ p 014 : 837799              - collatz
 p 015 : 137846528820        - count paths in grid
 p 016 : 1366                - sum of digits of 2^1000
 p 017 : 21124               - letters in numbers up to 1000
-p 018 :
+p 018 : 1074                - paths in triangle
 p 019 :
 p 020 :
 p 021 :
