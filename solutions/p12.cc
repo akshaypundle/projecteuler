@@ -20,7 +20,6 @@ int main() {
   while(true) {
     int t = i*(i+1)/2;
     int nd = numDivisors(t);
-    cout << t << "\n";
     if(nd > 500) {
       cout << t << "\n";
       break;

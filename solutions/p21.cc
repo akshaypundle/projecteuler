@@ -22,7 +22,6 @@ int main() {
     if(sums[j] == i && j > i) {
       ret +=i;
       ret +=j;
-      cout << i<< " and " << j <<"\n";
     }
   }
   cout << ret << "\n";
