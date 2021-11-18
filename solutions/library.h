@@ -16,6 +16,9 @@ namespace library {
   std::vector<bool> Primes(int n);
   // adds numbers given as a string
   std::string AddNumbers(std::vector<std::string> nums);
+  // returs proper divisors of n. 
+  // e.g n=6 returns 1,2,3
+  std::vector<int> properDivisors(int n);
 
 }
 
