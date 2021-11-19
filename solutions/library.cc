@@ -73,17 +73,15 @@ namespace library {
   }
 
   vector<int> properDivisors(int n) {
+    if(n == 1) return {1};
     vector<int> ret = {1};
-    if(n == 1) return ret;
-
     int e = sqrt(n);
-    for(int i=2;i<e; i++) {
+    for(int i=2;i<=e; i++) {
       if(n%i==0) {
         ret.push_back(i);
-        ret.push_back(n/i);
+        if( n/i != i) ret.push_back(n/i);
       }
     }
-    if(e*e == n) ret.push_back(e);
     sort(ret.begin(), ret.end());
     return ret;
   }
