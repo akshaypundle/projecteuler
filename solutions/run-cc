@@ -1,1 +1,1 @@
-g++  -I. $1.cc library.cc && ./a.out
+g++ -ggdb  -I. $1.cc library.cc && ./a.out

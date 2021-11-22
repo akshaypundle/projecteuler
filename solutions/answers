@@ -21,10 +21,10 @@ p 020 : 648                 - sum digits of 100!
 p 021 : 31626               - amicable numbers - sum of proper divisors
 p 022 : 871198282           - scoring names
 p 023 : 4179871             - abundant numbers
-p 024 :
-p 025 :
-p 026 :
-p 027 :
-p 028 :
+p 024 : 2783915460          - millionth permutation
+p 025 : 4782                - 1000 digit fibonacci
+p 026 : 983                 - length of longest repeating decimal
+p 027 : -59231              - primes from n^2+an+b
+p 028 : 669171001           - spiral sum
 p 020 :
 p 030 :
