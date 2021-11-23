@@ -26,5 +26,5 @@ p 025 : 4782                - 1000 digit fibonacci
 p 026 : 983                 - length of longest repeating decimal
 p 027 : -59231              - primes from n^2+an+b
 p 028 : 669171001           - spiral sum
-p 020 :
+p 020 : 9183                - unique a^b where a,b in [2,100]
 p 030 :

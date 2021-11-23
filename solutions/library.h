@@ -5,6 +5,7 @@
 #include <string>
 
 namespace library {
+  using namespace std;
 
   // returns if a positive integer is a palindrome e.g. 9009
   bool IsPalindrome(long n);
@@ -16,6 +17,11 @@ namespace library {
   std::vector<bool> Primes(int n);
   // adds numbers given as a string
   std::string AddNumbers(std::vector<std::string> nums);
+  // multiplies 2 numbers
+  std::string MultiplyNumbers(std::string a, std::string b);
+  // returns a^b
+  // the odd signature is because the base is allowed to be a pretty big string
+  std::string Pow(std::string a, int b);
   // returs proper divisors of n. 
   // e.g n=6 returns 1,2,3
   std::vector<int> properDivisors(int n);

@@ -3,6 +3,7 @@
 #include <cmath>
 #include <string>
 #include <algorithm>
+#include <iostream>
 
 namespace library {
 
@@ -72,9 +73,40 @@ namespace library {
     return res;
   }
 
+  string MultiplyNumbers(string a, string b) {
+    vector<string> intermediates;
+    string ans_tmpl="";
+    for(int i=b.size()-1;i>=0;--i) {
+      int d = b[i]-'0';
+      string ans=ans_tmpl;
+      ans_tmpl.push_back('0');
+      int rem = 0;
+      for(int ai=a.size()-1;ai>=0;ai--){
+        int new_num = (a[ai]-'0')*d+rem;
+        ans.push_back(new_num %10 + '0');
+        rem = new_num/10;
+      }
+      if(rem > 0) {
+        ans.push_back(rem+'0');
+      }
+      reverse(ans.begin(),ans.end());
+      intermediates.push_back(ans);
+    }
+    return AddNumbers(intermediates);
+  }
+
+  string Pow(string a, int b) {
+    if(b == 0) return "1";
+    else if(b % 2 == 0) {
+      return Pow(MultiplyNumbers(a,a), b/2);
+    } else {
+      return MultiplyNumbers(a, Pow(a, b-1));
+    }
+  }
+
   vector<int> properDivisors(int n) {
     if(n == 1) return {1};
-    vector<int> ret = {1};
+    vector<int> ret;
     int e = sqrt(n);
     for(int i=2;i<=e; i++) {
       if(n%i==0) {
