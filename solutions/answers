@@ -27,4 +27,14 @@ p 026 : 983                 - length of longest repeating decimal
 p 027 : -59231              - primes from n^2+an+b
 p 028 : 669171001           - spiral sum
 p 020 : 9183                - unique a^b where a,b in [2,100]
-p 030 :
+p 030 : 443839              - numbers where sigma( each_digit^5 ) = num
+p 031 : 73682               - number of ways to make 200 with coins of given denomination
+p 032 : 45228               - pandigital numbers
+p 033
+p 034
+p 035
+p 036
+p 037
+p 038
+p 039
+p 040

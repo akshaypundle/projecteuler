@@ -7,6 +7,8 @@
 namespace library {
   using namespace std;
 
+  // returns digits of n. r[0] is the LSB.
+  vector<int> Digits(long n);
   // returns if a positive integer is a palindrome e.g. 9009
   bool IsPalindrome(long n);
   // returns the greatest common divisor of 2 numbers
