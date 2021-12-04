@@ -10,17 +10,25 @@ namespace library {
   using namespace std;
 
   vector<int> Digits(long n) {
+    return DigitsInBase(n, 10);
+  }
+  
+  vector<int> DigitsInBase(long n, int base) {
     vector<int> digits;
     while(n>0) {
-      digits.push_back(n % 10);
-      n=n/10;
+      digits.push_back(n % base);
+      n=n/base;
     }
     return digits;
   }
 
   bool IsPalindrome(long n) {
+    return IsPalindromeInBase(n, 10);
+  }
+
+  bool IsPalindromeInBase(long n, int base) {
     if(n<0) return false;
-    vector<int> digits = Digits(n);
+    vector<int> digits = DigitsInBase(n, base);
 
     for(int i=0;i<digits.size();i++) {
       if(digits[i] != digits[digits.size() - 1 -i]) {

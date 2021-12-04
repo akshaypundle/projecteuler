@@ -7,10 +7,14 @@
 namespace library {
   using namespace std;
 
-  // returns digits of n. r[0] is the LSB.
+  // returns digits of n in base 10. r[0] is the LSB.
   vector<int> Digits(long n);
-  // returns if a positive integer is a palindrome e.g. 9009
+  // returns digits of n in specified base. r[0] is the LSB.
+  vector<int> DigitsInBase(long n, int base);
+  // returns if a positive integer is a palindrome in base 10 (e.g. 9009)
   bool IsPalindrome(long n);
+  // returns if a positive integer is a palindrome in the given base (e.g. 585 = 0b1001001001 is palindrome in base 2)
+  bool IsPalindromeInBase(long n, int base);
   // returns the greatest common divisor of 2 numbers
   long Gcd(long n1, long n2);
   // returns the least common multiple of 2 numbers
