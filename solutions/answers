@@ -34,7 +34,7 @@ p 033 : 100                 - digit cancel fractions 2 digit
 p 034 : 40730               - sum of factorial of digits = number
 p 035 : 55                  - circular primes below 1e6
 p 036 : 872187              - binary and base 10 palindrome numbers
-p 037
+p 037 : 748317              - truncatable prime
 p 038
 p 039
 p 040
