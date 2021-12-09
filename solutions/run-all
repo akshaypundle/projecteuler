@@ -1,7 +1,12 @@
 #!/bin/bash
-for i in {1..21}
+for i in {1..1000}
 do
-  echo Problem $i
-  /usr/bin/time -f 'Runtime: %E' ./run-cc p$i
-  echo
+  if [ -e "p$i.cc" ] 
+  then
+    echo Problem $i
+    /usr/bin/time -f 'Runtime: %E' ./run-cc p$i
+    echo
+  else
+    break
+  fi
 done
