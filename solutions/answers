@@ -36,5 +36,5 @@ p 035 : 55                  - circular primes below 1e6
 p 036 : 872187              - binary and base 10 palindrome numbers
 p 037 : 748317              - truncatable prime
 p 038 : 932718654           - large pandigital
-p 039
-p 040
+p 039 : 840                 - pythogorean triplets
+p 040 : 210                 - ith digitt in .123456789101112...
