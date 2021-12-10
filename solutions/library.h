@@ -17,6 +17,8 @@ namespace library {
   // returns if a positive integer is a palindrome in the given base (e.g. 585 = 0b1001001001 is palindrome in base 2)
   bool IsPalindromeInBase(long n, int base);
 
+  // Returns true is number is a prime.
+  bool IsPrime(long n);
   // returns a vector of size n+1 where a[i] is true iff i is prime
   std::vector<bool> Primes(int n);
 
