@@ -142,7 +142,7 @@ namespace library {
     return ret;
   }
 
-  vector<string> split(string &str, char delim) {
+  vector<string> Split(string &str, char delim) {
     vector<string> out;
     size_t start;
     size_t end = 0;

@@ -31,7 +31,7 @@ namespace library {
   std::vector<int> properDivisors(int n);
   
   // split a string by a character
-  vector<string> split(string &str, char delim);
+  vector<string> Split(string &str, char delim);
 
   // adds numbers given as a string
   std::string AddNumbers(std::vector<std::string> nums);
